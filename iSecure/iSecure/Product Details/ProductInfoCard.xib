@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="281" id="pNe-38-4SK" customClass="ProductInfoCard" customModule="iSecure" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pNe-38-4SK" id="YJg-Kb-q8o">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="259"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ntA-3z-ThK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="0f5-cN-xru"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cd5-Vj-uB7">
+                        <rect key="frame" x="8" y="203" width="304" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Bbg-kr-ZbL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlG-Of-1v3">
+                        <rect key="frame" x="8" y="231" width="304" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7pj-YD-Ybb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9r-wh-aiD">
+                        <rect key="frame" x="240" y="155" width="60" height="30"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.52156862745098043" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4NX-FI-mgC"/>
+                            <constraint firstAttribute="width" constant="60" id="TD7-du-txI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a9r-wh-aiD" firstAttribute="top" secondItem="YJg-Kb-q8o" secondAttribute="top" constant="155" id="6OU-ri-oe5"/>
+                    <constraint firstItem="ntA-3z-ThK" firstAttribute="leading" secondItem="YJg-Kb-q8o" secondAttribute="leading" id="GdV-U0-fGe"/>
+                    <constraint firstAttribute="trailing" secondItem="a9r-wh-aiD" secondAttribute="trailing" constant="20" id="SlG-SC-6eR"/>
+                    <constraint firstAttribute="trailing" secondItem="jlG-Of-1v3" secondAttribute="trailing" constant="8" id="Th2-ZX-P2z"/>
+                    <constraint firstAttribute="trailing" secondItem="Cd5-Vj-uB7" secondAttribute="trailing" constant="8" id="YP4-iL-y0Y"/>
+                    <constraint firstAttribute="trailing" secondItem="ntA-3z-ThK" secondAttribute="trailing" id="bZG-nC-zjs"/>
+                    <constraint firstItem="ntA-3z-ThK" firstAttribute="top" secondItem="YJg-Kb-q8o" secondAttribute="top" id="c5z-f5-93T"/>
+                    <constraint firstItem="jlG-Of-1v3" firstAttribute="top" secondItem="Cd5-Vj-uB7" secondAttribute="bottom" constant="8" id="ez4-ni-KRG"/>
+                    <constraint firstItem="jlG-Of-1v3" firstAttribute="leading" secondItem="YJg-Kb-q8o" secondAttribute="leading" constant="8" id="h8Y-c1-vPa"/>
+                    <constraint firstItem="Cd5-Vj-uB7" firstAttribute="leading" secondItem="YJg-Kb-q8o" secondAttribute="leading" constant="8" id="t7e-26-rSx"/>
+                    <constraint firstItem="Cd5-Vj-uB7" firstAttribute="top" secondItem="a9r-wh-aiD" secondAttribute="bottom" constant="18" id="w6P-Tw-r7m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="productCategory" destination="jlG-Of-1v3" id="0sz-Fa-Ssc"/>
+                <outlet property="productImage" destination="ntA-3z-ThK" id="T5h-Z5-RG5"/>
+                <outlet property="productPrice" destination="a9r-wh-aiD" id="KDD-rl-aq7"/>
+                <outlet property="productTitle" destination="Cd5-Vj-uB7" id="GrP-GE-KV2"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="333"/>
+        </tableViewCell>
+    </objects>
+</document>
